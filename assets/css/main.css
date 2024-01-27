@@ -1,0 +1,456 @@
+/* *{
+    border: green solid 1px;
+} */
+/*CLASS*/
+.margin__top--20{
+    margin-top: 40px;
+}
+.margin__top--50 {
+    margin-top: 50px;
+}
+.margin__bottom--20 {
+    margin-bottom: 20px;
+}
+.margin__bottom--50{
+    margin-bottom:50px;
+}
+.text__align--center{
+    text-align: center;
+}
+.text__align--justify {
+    text-align: justify;
+}
+.text__align--left {
+    text-align: left;
+    
+}
+.text__align--right {
+    text-align: right;
+}
+
+/*===========================================================*/
+/*BODY ===================*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    display: grid;
+    font-family: 'Rubik' , sans-serif;
+     background-color: white; 
+  /*  background-image: url(../grafik/background__exp.jpg);*/
+}
+/*===========================================================*/
+
+nav{
+    height: auto;
+    background-color:whitesmoke;
+    width: 100%;
+    margin:0px auto 20px auto;
+    height: 5rem, auto;
+
+}
+
+.ranem{
+    background-image: url(../grafik/background__exp.jpg);
+    background-repeat: no-repeat;
+
+}
+
+
+menu{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    width: 80%;
+    margin-inline: auto;
+    padding-left: .40px;
+}
+
+
+menu article{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    margin-top: 50px;
+    
+   
+}
+
+menu article a{
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    float: right;
+    color: #fff;
+    font-size: 15px;
+    width: 150px;
+    height: 70.5px;
+    
+  
+}
+menu article a:hover{
+    cursor: pointer;
+}
+
+.navigation__logo {
+    display: flex;
+    column-gap: 10px;
+}
+.navbar-brand{
+    display: flex;
+    column-gap: 10px;
+}
+.navbar-brand img{
+    width: 220px;
+    position: relative;
+}
+
+.navigation__logo img{
+    width: 220px;
+    position: relative;
+}
+.login-button{
+    background-color: #009970;
+    color : #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3 background-color ;
+    font-family: 'Rubik' , sans-serif;
+
+}
+
+.login-button:hover{
+    background-color: #00b383;
+
+}
+.navbar-brand{
+    font-weight: 500;
+    color: #00b383;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 2cm;
+    color: #3e4244;
+}
+.navbar-toggler :focus , .btn-close:focus{
+    box-shadow: none;
+    outline:none;
+}
+
+.nav-link{
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover , .nav-link.active {
+    color: #000;
+}
+@media (min-width : 991px) {
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+
+}
+
+.nav-link:hover::before , .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+
+}
+}
+menu article .openHam{
+    display:none;
+}
+menu button {
+    position: relative;
+    text-decoration: none;
+    width: 250px;
+    height: 70.5px;
+    background-color: #FFBF1B;
+    border: whitesmoke solid 2px;
+    color: #0075BE;
+    font-size: 25px;
+    font-weight: 200;
+}
+menu button:hover{
+    cursor: pointer;
+}
+ .hamburger {
+    display:none;
+ }
+ .header{
+    color: blue;
+ }
+
+
+
+
+ .menu__x{
+    font-size: 40px;
+    color: #3e4244;
+    position: absolute;
+    width: 50px;
+    right: 20px;
+    top: 10px;
+    display: none;
+ }
+/*===========================================================*/
+/*KONTAKT ================*/
+.kontakt{
+    width: 100%;
+    background-color: #FFBF1B;
+    height: auto;
+    padding:20px 0px;
+}
+.kontakt h3{
+    color: #0075BE;
+    border-bottom: #0075BE solid 2px;
+}
+.kontakt article{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    width: 50%;
+    margin-inline: auto;
+}
+.kontakt div img{
+    width: 100%;
+}
+.kontakt button{
+    /* position: relative;
+    left: 40%; */
+    display: block;
+    margin-inline: auto;
+    width: 280px;
+    height: 50px;
+    font-size: 25px;
+    background-color: #0075BE;
+    color: #FFBF1B;
+    border: none;
+}
+.kontakt button:hover {
+    cursor: pointer;
+    background-color: #FFBF1B;
+    color: #0075BE;
+}
+.kontakt button:active{
+    background-color: #0075BE;
+    color: #FFBF1B;
+}
+.kontakt p{
+    width: 80%;
+    margin-inline:auto;
+}
+/*===========================================================*/
+/*HEADER  ================*/
+header{
+    padding: 0 15%;
+    overflow: hidden;
+    width: 100;
+  
+
+    border-radius: 0.1cm;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: left ;
+    display: flex;
+
+    
+    /*
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    */
+    background: linear-gradient(130.08deg , #383528 0% , #383528 100%);
+}
+.hoem h1{
+    padding: 5px 25px;
+    background: linear-gradient(130.08deg , #383528 0% , #fff 100%);
+    
+    border: 1px solid #3b3b3b;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+/*
+header h1{
+    width: 25rem;
+    position: relative;
+    margin: 1rem 0px 0px 10rem;
+    color: white;
+    font-size: 3.5rem;
+    font-weight:400;
+    z-index: 2;
+}
+*/
+.hoem{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+.header__img--schloss{
+    width: 500px;
+    height: 1000px;
+
+}
+
+.header__img--schloss img{
+    
+    
+    width: 150%;
+    height: 200%;
+    object-fit: contain;
+}
+
+
+header ul {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    width: 15rem;
+    row-gap: 10px;
+    padding: 0rem 2rem;
+}
+
+header ul img {
+    width: 20px;
+    z-index: 2;
+}
+
+
+header a {
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    z-index: 2;
+    
+}
+.header__button{
+    position: relative;
+    height: auto;
+    width: 20rem;
+    margin: .5rem auto 2rem auto;
+    padding: 1.5rem 2rem;
+    font-size: 40px;
+    font-weight: 400;
+    background-color: #FFBF1B;
+    color: #0075BE;
+    z-index: 2;
+}
+header button:hover{
+    cursor: pointer;
+}
+.header__img--schloss img{
+    height: 100%;
+}
+*/
+/*===========================================================*/
+/*SECTION ================*/
+/*on section.css*/
+/*===========================================================*/
+/*NAV  ===================*/
+/*zusammenfassung ========*/
+.zusammenfassung{
+    width: 80%;
+    margin-inline:auto;
+    background-color: whitesmoke;
+    padding: 5rem 0px;
+}
+.zusammenfassung p{
+    width: 80%;
+    margin-inline: auto;
+    color: #0075BE;
+    font-size: 20px;
+    font-weight: 100px;
+    line-height: 25px;
+}
+.zusammenfassung h3{
+    color: #0075BE;
+    border-bottom: #0075BE solid 1px;
+}
+.zusammenfassung .stadtInfo{
+    width: 80%;
+    margin-inline:auto;
+    display:grid;
+    grid-template-columns: auto;
+}
+.zusammenfassung .stadtInfo a{
+    text-decoration: none;
+    color: #0075BE;
+    background-color: white;
+    padding-top: 10px;
+    height: 30px;
+    border: black solid 1px;
+    text-align: center;
+}
+.zusammenfassung .stadtInfo a:hover{
+    background-color: #0075BE;
+    color: white;
+}
+.zusammenfassung .stadtInfo a:active{
+    background-color: white;
+    color: #0075BE;
+}
+/*===========================================================*/
+/*FOOTER  ================*/
+footer{
+    background-color: #3e4244;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 50px 0px;
+}
+footer div{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    width: 65%;
+    margin-inline:auto;
+    margin-top: 50px;
+}
+footer article{
+    position: relative;
+}
+footer img{
+    width: 150px;
+    position: relative;
+}
+footer .footer__dienst{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    /* grid-template-columns:auto; */
+    height: 200px;
+}
+footer a{
+    text-decoration: none;
+    color:white;
+}
+footer a:nth-child(1){
+    font-size: 25px;
+}
+/*TEL BAR*/
+.tel__bar {
+    display:none;
+}

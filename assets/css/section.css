@@ -1,0 +1,181 @@
+
+
+section {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-inline: auto;
+}
+
+section img {
+    width: 300px;
+   
+}
+section h3{
+    color:white;
+    font-size: 40px;
+    font-weight: 900;
+    font-weight: lighter;text-align: center;
+}
+section p{
+    width: 100%;
+    font-weight: lighter;
+}
+.article__verse{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    /* background-color: #5b94b3; */
+    color:rgb(215, 215, 215);
+    text-align: left;
+    border-bottom: #FFBF1B solid 2px;
+    padding: 20px 0px;
+    background-color: #5a798acb;
+    
+}
+.article__reverse{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-auto-flow: dense;
+    direction: rtl;
+    color: rgb(215, 215, 215);
+    text-align: left;
+    border-bottom: #FFBF1B solid 2px;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+    background-color: #5a798acb;
+}
+#dienstleistung{
+    background-color: #FFBF1B;
+    padding: 20px 0px;
+    color: #0075BE;
+    font-size: 40px;
+    font-weight: 500;
+}
+/*PREIS =====*/
+.preis{
+    position: relative;
+}
+/*UBERUNS ===*/
+.ueberuns{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    margin-bottom: 20px;
+    background-color: #5a798acb;
+}
+.ueberuns article{
+    display: flex;
+    row-gap: 20px;
+}
+.ueberuns article img{
+    height: 200px;
+    width: auto;
+}
+.ueberuns p{
+    color: white;
+}
+.ueberuns__img{
+    display:flex;
+    flex-direction: column;
+    row-gap: 25px;
+
+}
+.ueberuns__img img{
+    width: 100px;
+    margin-right: 20px;
+}
+.ueberuns__img a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+.ueberuns__img a::target-text {
+   padding-bottom: 20px;
+}
+.ueberuns__img a:hover {
+    cursor: pointer;
+    color: whitesmoke;
+}
+/*kontakt*/
+.kontakt__{
+    color: white;
+    height: 300px;
+    padding-top: 100px;
+    background-color: #5a798acb;
+}
+.kontakt__ a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.kontakt__ div{
+    display: flex;
+    flex-direction: column;
+   
+}
+/*Kontakt Section*/
+
+/*Werbung*/
+.werbung__auto{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #FFBF1B;
+    height: auto;
+    width: 80%;
+    margin-inline: auto;
+    padding: 50px 0px;
+}
+.werbung__auto h3{
+    font-size: 40px;
+    font-weight: 100;
+    color:black;
+    text-align: center;
+    color: #0075BE;
+    border-bottom: #0075BE solid 2px;
+}
+.werbung__auto article{
+    width: auto;
+    margin-inline: auto;
+    display: flex;
+    column-gap: 20px;
+    
+}
+.werbung__auto--img{
+    margin-top: 190px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+    row-gap: 5px;  
+}
+.werbung__auto--img img{
+    width: 100px;
+}
+.werbung__auto--img--0{
+    margin-top: 20px;
+    width: 26rem;
+    height: auto;
+    position: absolute;
+}
+
+.werbung__auto p{
+    width:200px;
+    color: black;
+    position: relative;
+    font-weight: 100;
+    font-size: 15px;
+    margin-top: 190px;
+}
+.werbung__auto button{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-inline: auto;
+    background-color: #0075BE;
+    color: #FFBF1B;
+    border: none;
+}
+.werbung__auto button:hover {
+    cursor: pointer;
+    background-color: #035f98;
+}

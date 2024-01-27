@@ -1,0 +1,209 @@
+@media(max-width:1024px){
+    menu article{
+        width: 100%;
+        height: 85%;
+        margin-inline:auto;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0rem;
+        top:2rem;
+        z-index: 90;
+        background-color: whitesmoke;
+        padding-top: 40%;
+
+    }
+    menu article a{
+        text-align: center;
+        width: 200px;
+        position: relative;
+        margin-inline:auto;
+    }
+    
+    menu article a:hover{
+        background-color: #0075BE;
+        color: white;
+    }
+    .menuShow{
+        display: none;
+    }
+    .menu__x{
+        
+        display: block;
+     }
+    .navigation__logo{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .navbar-brand{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .navbar-brand img {
+        width: 220px;
+        position: relative;
+    }
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        left:82%;
+        width: 50px;
+        height: 50px;
+        background-image: url(../grafik/menu.jpg);
+        z-index: 95;
+        border: none;
+    }
+    .hamburger:hover{
+        cursor: pointer;
+        box-shadow: rgb(169, 169, 169) 1px 1px;
+    }
+    .hamburger:active{
+        box-shadow: none;
+    }
+
+    header{
+        background-position: 50% 50%;
+    }
+    .header__img--schloss img{
+        height: 100%;
+        margin-left: -20px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+    }
+  
+
+@media(max-width:700px) {
+    .navigation__logo img{
+    width: 220px;
+    position: relative;
+    }
+    .navigation__logo {
+    column-gap: 0px;
+}
+	menu{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    width: 80%;
+    margin-inline: auto;
+    padding-left: -40px;
+}
+	/*Section*/
+	section img {
+	width: 80%;
+    height: auto;
+	margin-inline:auto;
+   
+}
+    section p {
+    width: 80%;
+    margin-inline:auto;
+    font-weight: lighter;
+}
+    .article__verse {
+    display: flex;
+    flex-direction: column;
+}
+
+    .article__reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+/*überuns uberuns*/
+    .ueberuns{
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+    margin-bottom: 20px;
+}
+/*kontakt*/
+.kontakt__ a {
+    text-align: left;
+    margin-top: 20px;
+}
+.kontakt__ p{
+    margin-bottom: 50px;
+   
+}
+/*Kontakt Werbung*/
+.kontakt article{
+    width: 80%;
+}
+.kontakt article img{
+    width: 100%;
+    
+}
+
+/*TEL BAR*/
+.tel__bar{
+    display:block;
+    width: 100%;
+    background-color: #FFBF1B;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 99;
+}
+.tel__bar button{
+    color: #0075BE;
+    width: 50%;
+    height: 100px;
+    font-size: 40px;
+    background-color: #FFBF1B;
+    border: none;
+}
+.header__button {
+    display: none;
+}
+/*WERBUNG*/
+.werbung__auto{
+    padding-bottom: 50px;
+}
+.werbung__auto article {
+    flex-direction: column;
+}
+.werbung__auto--img--0{
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin-inline: auto;
+}
+.werbung__auto--img{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+    row-gap: 5px;  
+    width: 80%;
+    margin-inline: auto;
+}
+.werbung__auto--img img{
+    width: 100%;
+    position: inherit;
+}
+
+.werbung__auto p{
+    width: 80%;
+    margin-inline:auto;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.werbung__auto button{
+    margin-top: 20px;
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    margin-inline: auto;
+    background-color: #0075BE;
+    color: #FFBF1B;
+    border: none;
+}
+/*FOOTER*/
+footer div{
+    row-gap: 60px;
+}
+}
